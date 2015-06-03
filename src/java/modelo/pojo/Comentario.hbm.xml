@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 01-jun-2015 18:19:25 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+  <class catalog="basedatos" name="modelo.pojo.Comentario" table="comentario">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="fecha" type="timestamp">
+      <column length="19" name="fecha" not-null="true"/>
+    </property>
+    <property name="texto" type="string">
+      <column length="500" name="texto" not-null="true"/>
+    </property>
+    <property name="idEvento" type="int">
+      <column name="id_evento" not-null="true"/>
+    </property>
+    <property name="idUsuario" type="int">
+      <column name="id_usuario" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

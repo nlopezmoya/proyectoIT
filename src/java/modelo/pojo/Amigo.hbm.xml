@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 01-jun-2015 18:19:25 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+  <class catalog="basedatos" name="modelo.pojo.Amigo" table="amigo">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="idSeguidor" type="int">
+      <column name="id_seguidor" not-null="true"/>
+    </property>
+    <property name="idSeguido" type="int">
+      <column name="id_seguido" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
